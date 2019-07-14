@@ -2,4 +2,4 @@
 
 cd activejdbc
 
-echo "mvn test -P$DB -V -B" && mvn test -P$DB -V -B
+echo "mvn test -P$DB -V -B" && mvn test -P$DB -V -B | grep -v '{\"level\":\"INFO\"'
